@@ -160,6 +160,7 @@ let handleGuess = () => {
       }
     }, 300 * (i + 1) + 300);
   }
+  console.log(GUESSES, guesses.length);
 
   if (lockedGuess === currentWord) {
     running = false;
@@ -180,7 +181,7 @@ let handleGuess = () => {
         origin: { y: 0.6 },
       });
     }, 2000);
-  } else if (guesses.length === GUESSES) {
+  } else if (guesses.length == GUESSES - 1) {
     running = false;
 
     setTimeout(() => {
