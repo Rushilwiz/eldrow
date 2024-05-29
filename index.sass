@@ -63,7 +63,16 @@ header
       align-items: center
       font-size: 2rem
       font-weight: 800
-      transform: scale(-1, 1)
+      color: white
+      
+      &.unguessed
+        color: black
+        transform: scale(-1, 1)
+
+      &.guessed
+        color: black
+        transform: scale(-1, 1)
+        transition: all 0.3s
 
       &.correct
         background-color: $color-correct
@@ -106,6 +115,21 @@ header
       transition: all 0.3s
       transform: scale(-1, 1)
 
+      &.correct
+        background-color: $key-color-correct !important
+        color: #fff
+        border: none
+      
+      &.present
+        background-color: $key-color-present
+        color: #fff
+        border: none
+      
+      &.absent
+        background-color: $key-color-absent
+        color: #fff
+        border: none
+
     #backspace
       width: 5rem
       
@@ -116,6 +140,14 @@ header
     
     #enter
       width: 5rem
+
+.toast
+  background: black !important
+  color: white
+  font-family: $sans-serif
+  font-weight: 600
+  border-radius: 5px !important
+  transform: scale(-1, 1) !important
 
 footer
   font-family: $serif
