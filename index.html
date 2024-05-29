@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eldroW</title>
@@ -20,20 +27,20 @@
     </header>
 
     <div class="game">
-      <div class="board">
+      <div class="board" id="board">
         <div class="row">
-          <div class="cell absent">Y</div>
-          <div class="cell present">R</div>
-          <div class="cell absent">R</div>
-          <div class="cell">U</div>
-          <div class="cell">C</div>
+          <div class="cell absent" id="Y">Y</div>
+          <div class="cell present" id="R">R</div>
+          <div class="cell absent" id="R">R</div>
+          <div class="cell absent" id="U">U</div>
+          <div class="cell absent" id="C">C</div>
         </div>
         <div class="row">
-          <div class="cell">W</div>
-          <div class="cell">A</div>
-          <div class="cell">T</div>
-          <div class="cell">E</div>
-          <div class="cell">R</div>
+          <div class="cell" id="R">R</div>
+          <div class="cell" id="E">E</div>
+          <div class="cell" id="T">T</div>
+          <div class="cell" id="A">A</div>
+          <div class="cell" id="W">W</div>
         </div>
         <div class="row">
           <div class="cell"></div>
@@ -66,38 +73,38 @@
       </div>
       <div class="letters">
         <div class="row">
-          <div class="letter">P</div>
-          <div class="letter">O</div>
-          <div class="letter">I</div>
-          <div class="letter">U</div>
-          <div class="letter">Y</div>
-          <div class="letter">T</div>
-          <div class="letter">R</div>
-          <div class="letter">E</div>
-          <div class="letter">W</div>
-          <div class="letter">Q</div>
+          <div class="letter" id="P">P</div>
+          <div class="letter" id="O">O</div>
+          <div class="letter" id="I">I</div>
+          <div class="letter" id="U">U</div>
+          <div class="letter" id="Y">Y</div>
+          <div class="letter" id="T">T</div>
+          <div class="letter" id="R">R</div>
+          <div class="letter" id="E">E</div>
+          <div class="letter" id="W">W</div>
+          <div class="letter" id="Q">Q</div>
         </div>
         <div class="row">
-          <div class="letter">L</div>
-          <div class="letter">K</div>
-          <div class="letter">J</div>
-          <div class="letter">H</div>
-          <div class="letter">G</div>
-          <div class="letter">F</div>
-          <div class="letter">D</div>
-          <div class="letter">S</div>
-          <div class="letter">A</div>
+          <div class="letter" id="L">L</div>
+          <div class="letter" id="K">K</div>
+          <div class="letter" id="J">J</div>
+          <div class="letter" id="H">H</div>
+          <div class="letter" id="G">G</div>
+          <div class="letter" id="F">F</div>
+          <div class="letter" id="D">D</div>
+          <div class="letter" id="S">S</div>
+          <div class="letter" id="A">A</div>
         </div>
         <div class="row">
-          <div class="letter enter">ENTER</div>
-          <div class="letter">M</div>
-          <div class="letter">N</div>
-          <div class="letter">B</div>
-          <div class="letter">V</div>
-          <div class="letter">C</div>
-          <div class="letter">X</div>
-          <div class="letter">Z</div>
-          <div class="letter backspace">
+          <div class="letter" id="backspace">ENTER</div>
+          <div class="letter" id="M">M</div>
+          <div class="letter" id="N">N</div>
+          <div class="letter" id="B">B</div>
+          <div class="letter" id="V">V</div>
+          <div class="letter" id="C">C</div>
+          <div class="letter" id="X">X</div>
+          <div class="letter" id="Z">Z</div>
+          <div class="letter" id="backspace">
             <svg
               height="100%"
               width="100%"
@@ -120,7 +127,12 @@
     </div>
 
     <footer>
-      <p>created by <a href="crucialnet.org">rushil</a></p>
+      <p>
+        created by <a target="_blank" href="https://crucialnet.org">rushil</a>
+      </p>
     </footer>
+
+    <script src="lists.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -11,6 +11,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 header {
@@ -97,14 +100,14 @@ header p {
   transition: all 0.3s;
   transform: scale(-1, 1);
 }
-.letters .row .backspace {
+.letters .row #backspace {
   width: 5rem;
 }
-.letters .row .backspace svg {
+.letters .row #backspace svg {
   transform: scale(-1, 1);
   width: 50%;
 }
-.letters .row .enter {
+.letters .row #enter {
   width: 5rem;
 }
 

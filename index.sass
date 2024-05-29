@@ -4,6 +4,10 @@ $sans-serif: 'Raleway', sans-serif
 $color-present: #c9b458
 $color-correct: #6aaa64
 $color-absent: #787c7e
+
+$key-color-present: #c9b458
+$key-color-correct: #6aaa64
+$key-color-absent: #787c7e
   
 *
   padding: 0
@@ -18,6 +22,8 @@ body
   flex-direction: column
   justify-content: center
   align-items: center
+
+  user-select: none
 
 header
   font-family: $serif
@@ -100,7 +106,7 @@ header
       transition: all 0.3s
       transform: scale(-1, 1)
 
-    .backspace
+    #backspace
       width: 5rem
       
       svg
@@ -108,7 +114,7 @@ header
         width: 50%
 
     
-    .enter
+    #enter
       width: 5rem
 
 footer
