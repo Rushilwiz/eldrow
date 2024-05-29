@@ -7,6 +7,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  touch-action: manipulation;
   display: flex;
   flex-direction: column;
   justify-content: center;
