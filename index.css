@@ -87,14 +87,23 @@ header p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 1.2rem;
   font-weight: 100;
+}
+@media (max-width: 786px) {
+  .letters {
+    gap: 0.5rem;
+  }
 }
 .letters .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+}
+@media (max-width: 786px) {
+  .letters .row {
+    gap: 0.5rem;
+  }
 }
 .letters .row .letter {
   width: 3rem;
@@ -108,6 +117,13 @@ header p {
   cursor: pointer;
   transition: all 0.3s;
   transform: scale(-1, 1);
+}
+@media (max-width: 786px) {
+  .letters .row .letter {
+    width: 1.75rem;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
 }
 .letters .row .letter.correct {
   background-color: #6aaa64 !important;
@@ -127,12 +143,22 @@ header p {
 .letters .row #backspace {
   width: 5rem;
 }
+@media (max-width: 786px) {
+  .letters .row #backspace {
+    width: 3rem;
+  }
+}
 .letters .row #backspace svg {
   transform: scale(-1, 1);
   width: 50%;
 }
 .letters .row #enter {
   width: 5rem;
+}
+@media (max-width: 786px) {
+  .letters .row #enter {
+    width: 3.5rem;
+  }
 }
 
 .toast {

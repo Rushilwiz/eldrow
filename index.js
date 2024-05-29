@@ -72,7 +72,7 @@ let handleButtonPress = (button) => {
 };
 
 onkeyup = (event) => {
-  if (!running || runningAnim) {
+  if (!running || runningAnim || !event.key.match(/[a-z]/i)) {
     return;
   }
 
